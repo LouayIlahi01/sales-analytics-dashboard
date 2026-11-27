@@ -23,7 +23,7 @@ Uses a synthetic dataset for demonstration.
 Requires **Python 3.9+**
 
 ```bash
-git clone https://github.com/Louaylahi01/sales-analytics-dashboard.git
+git clone https://github.com/Louayllahi01/sales-analytics-dashboard.git
 cd sales-analytics-dashboard
 python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
