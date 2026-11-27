@@ -20,28 +20,15 @@ Uses a synthetic dataset for demonstration.
 - Filtering and aggregation are done with vectorised Pandas operations
 
 ## Run locally
+Requires **Python 3.9+**
+
 ```bash
-git clone https://github.com/<your-username>/sales-analytics-dashboard.git
+git clone https://github.com/Louaylahi01/sales-analytics-dashboard.git
 cd sales-analytics-dashboard
 python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-python generate_data.py      # creates data/sales_data.csv
+
+# Optional: Regenerate the synthetic dataset (a pre-generated CSV is already included)
+python generate_data.py      
+
 python app.py                # open http://127.0.0.1:8050
-```
-
-## Project structure
-```
-app.py             # Dash app (layout + callback)
-generate_data.py   # synthetic dataset generator
-data/              # sales_data.csv
-assets/            # style.css (theme) and screenshots
-requirements.txt
-```
-
-## Roadmap
-- [ ] Use a real dataset
-- [ ] Customer segmentation view
-- [ ] Deploy (Render / Hugging Face Spaces)
-
-## Author
-Louay - Business Analytics, Tunis Business School
